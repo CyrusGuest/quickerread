@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Reader from "./components/Reader";
 import { install } from "ga-gtag";
 import VerticalAd from "./components/VerticalAd";
+import SquareAd from "./components/SquareAd";
 
 function App() {
   const [content, setContent] = useState("");
@@ -13,7 +14,7 @@ function App() {
   }, []);
 
   return (
-    <div className="grid grid-cols-3">
+    <div className="md:grid md:grid-cols-3 flex flex-col">
       <VerticalAd />
       <div>
         {currentlyReading ? (
@@ -72,6 +73,7 @@ function App() {
         </div>
       </div>
       <VerticalAd />
+      <SquareAd />
     </div>
   );
 }
