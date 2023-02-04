@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Reader from "./components/Reader";
-import { install } from 'ga-gtag';
+import { install } from "ga-gtag";
 import VerticalAd from "./components/VerticalAd";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   const [currentlyReading, setCurrentlyReading] = useState(false);
 
   useEffect(() => {
-    install('G-DX372ZLMRF'); 
+    install("G-DX372ZLMRF");
   }, []);
 
   return (
